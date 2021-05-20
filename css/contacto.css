@@ -23,6 +23,17 @@
 
 .grid-container .header .form {
     max-width: 34.375rem;
+    display: block;
+}
+
+.grid-container .header .form div input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.grid-container .header .form div textarea {
+    margin-top: 10px;
+    width: 100%;
 }
 
 .grid-container .header .form .btn {
