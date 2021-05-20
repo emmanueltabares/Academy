@@ -1,0 +1,17 @@
+.nav {
+    background-color: #12203E !important;
+    color: white !important;
+}
+
+
+.nav .navbar-brand {
+    color: white;
+}
+
+.nav .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.grid-container .nav {
+    grid-area: nav;
+}

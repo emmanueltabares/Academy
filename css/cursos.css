@@ -1,0 +1,17 @@
+#bodyCursos {
+    background-image: url(/images/2.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.grid-container .boxes {
+    margin-top: 3.125rem;
+}
+
+.grid-container .suscribe {
+    margin-top: 3.125rem;
+}
+
+.grid-container .suscribe div p {
+    margin-top: 3.125rem;
+}

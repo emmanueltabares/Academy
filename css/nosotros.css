@@ -1,0 +1,80 @@
+#bodyNosotros {
+    background-image: url(/images/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "nav "
+                         "header"
+                         "img"
+                         "suscribe"
+                         "footer ";
+}
+
+.grid-container .header {
+    margin-left: 0px;
+}
+
+.grid-container .container .imgStyle {
+    height: 18.75rem;
+    width: 18.75rem;
+}
+
+.grid-container .container {
+    height: 350px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 15.625rem;
+    padding-right: 12.5rem;
+    display: flex;
+}
+
+.grid-container .container .titulo {
+    margin-top: 1rem;
+}
+
+.grid-container .container .titulo h1 {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 360px) {
+    
+    .grid-container .container {
+        height: 340px;
+        text-align: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .grid-container .header {
+        margin-top: 10px;
+    }
+
+    .grid-container .container .titulo h1 {
+        font-size: 2px;
+    }
+
+    .grid-container .container .imgStyle {
+        height: 12.5rem;
+        width: 12.5rem;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .grid-container .container .titulo h1 {
+        font-size: 25px;
+    }
+}
+
+

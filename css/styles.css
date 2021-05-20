@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bodyIndex {
+    font-size: 16px;
+    background-image: url(/images/2.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.grid-container {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "nav nav nav"
+                         "header img img"
+                         "box1 box2 box3"
+                         "suscribe suscribe suscribe"
+                         "footer footer footer";
+}
+
+.grid-container .header {
+    grid-area: header;
+}
+
+.grid-container .img {
+    grid-area: img;
+}
+
+.grid-container .box1 {
+    grid-area: box1;
+}
+
+.grid-container .box2 {
+    grid-area: box2;
+}
+
+.grid-container .box3 {
+    grid-area: box3;
+}
+
+.grid-container .suscribe {
+    grid-area: suscribe;
+    background-color: #12203E;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 25rem;
+}
+
+.grid-container .img img {
+    width: 100%;
+    height: 31.25em;
+}
+
+.grid-container .header {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    margin-top: 12em;
+    margin-left: 2.875rem;
+}
+
+.grid-container .header .botones {
+    margin-top: 1rem;
+}
+
+.grid-container .header .botones .btn {
+    font-size: 1rem;
+    padding: 0.625em;
+    border: none;
+    border-radius: 0.375em;
+    background-color: #455881;
+}
+
+.grid-container .header .botones .btn:hover {
+    background-color: #12203E;
+    cursor: pointer;
+}
+
+.grid-container .header .botones .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container .boxes {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.grid-container .boxes .imgBox {
+    width: 12.5em;
+    height: 12.5em;
+}
+
+.grid-container .boxes .boxTitle {
+    color: #12203E;
+    font-size: 12px;
+    padding: 1.875em;
+    margin-left: 3.125em;
+    margin-right: 3.125em;
+    border-bottom: 1px solid #12203E;
+}
+
+.grid-container .boxes .boxP {
+    font-size: 1rem;
+    padding: 1.875em;
+}
+
+.grid-container .suscribe div li {
+    font-size: 1rem;
+    margin-top: 30px;
+    display: inline-block;
+    height: 40px;
+    width: 180px;
+    padding: 10px;
+}
+
+.grid-container .suscribe div li:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #12203E;
+}
+
+.grid-container .suscribe div li a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container .suscribe div li a:hover {
+    color: #12203E
+}
+
+.grid-container .suscribe div h1 {
+    font-size: 45px;
+    margin-top: 100px;
+}
+
+.grid-container .suscribe form label {
+    display: block;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.grid-container .suscribe form input {
+    margin-top: 0.625rem;
+    height: 1.875rem;
+    width: 25rem;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #12203E;
+    color: white;
+    outline: 0px;
+}
+
+@media screen and (max-width: 360px) {
+    
+    .grid-container {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, auto);
+    
+        grid-template-areas: "nav"
+                             "img"
+                             "header"
+                             "box1"
+                             "box2"
+                             "box3"
+                             "suscribe"
+                             "footer";
+    }
+
+    .grid-container .img img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .grid-container .header {
+        text-align: center;
+        margin-top: 0px;
+        margin-right: 3.75rem;
+
+    }
+
+    .grid-container .boxes {
+        font-size: 20px;
+    }
+
+    .grid-container .boxes .boxTitle {
+        padding: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .grid-container .suscribe div h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .grid-container .suscribe form input {
+        width: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .grid-container .suscribe div h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .grid-container .header {
+        margin-top: 9.375rem;
+        margin-left: 3.375rem;
+    }
+}
+

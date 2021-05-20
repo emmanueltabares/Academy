@@ -1,0 +1,80 @@
+#bodyContacto {
+    background-image: url(/images/5.png);
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.grid-container {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: "nav nav"
+                         "img header"
+                         "footer footer";
+}
+
+.grid-container .header {
+    margin-top: 4.375rem;
+    margin-bottom: 2.5rem;
+}
+
+.grid-container .header .form {
+    max-width: 34.375rem;
+}
+
+.grid-container .header .form .btn {
+    font-size: 1.25rem;
+    margin-left: 85%;
+    background-color: white;
+    color: #12203E;
+}
+
+.grid-container .header .form .btn:hover {
+    color: white;
+    background-color: #12203E;
+}
+
+.grid-container .header div  {
+    max-width: 34.375rem;
+}
+
+@media screen and (max-width: 360px) {
+    
+    .grid-container {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+    
+        grid-template-areas: "nav"
+                             "img"
+                             "header"
+                             "footer";
+    }
+
+    .grid-container .header {
+        margin-top: 0.3125rem;
+        padding: 0.625rem;
+        margin-left: 20px;
+    }
+
+    .grid-container .header .form .btn {
+        margin-left: 35px
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .grid-container .header {
+        margin-right: 1.25rem;
+    }
+
+    .grid-container .header .form .btn {
+        margin-left: 80%
+    }
+}
+
